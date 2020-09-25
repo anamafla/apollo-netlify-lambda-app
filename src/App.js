@@ -8,6 +8,8 @@ const client = new ApolloClient({
   uri: "/.netlify/functions/graphql"
 });
 
+client.query({}).then(result => console.log(result));
+
 class LambdaDemo extends Component {
   constructor(props) {
     super(props);
